@@ -1,0 +1,68 @@
+*{
+    font-family: Bahnschrift, serif;
+}
+body{
+    background-color: #2a2929;
+    color: white;
+}
+
+.title{
+    font-size: 3vw;
+    text-align: center;
+    margin-right: 50px;
+}
+.todo-grid{
+    display: grid;
+    grid-template-columns: 300px 150px 100px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+
+}
+.task-row{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 300px 150px 100px;
+    justify-content: center;
+}
+.task-input{
+    width: 250px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.task-input-date{
+    height: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
+}
+.task-input-date:hover{
+    cursor: pointer;
+}
+.task-add-button{
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 60px;
+    background-color: green;
+    border: none;
+}
+.task-add-button:hover{
+    cursor: pointer;
+    background-color: lightgreen;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.delete-button{
+    height: 34px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 60px;
+    background-color: red;
+    border: none;
+}
+.delete-button:hover{
+    cursor: pointer;
+    background-color: #ec8787;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
