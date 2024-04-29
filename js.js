@@ -1,10 +1,18 @@
 let toDoList = [];
 
+window.onload = function () {
+    let localToDoList = localStorage.getItem('toDoList')
+    if (localToDoList) {
+        toDoList = JSON.parse(localToDoList);
+        renderToDOList()
+    }
+}
+
 function taskAddingToArray() {
     let task = document.querySelector('.task-input').value;
     let task_date = document.querySelector('.task-input-date').value;
     toDoList.push({name: task, date: task_date});
-    console.log(toDoList);
+    localStorage.setItem('toDoList', JSON.stringify(toDoList));
     document.querySelector('.task-input').value = '';
     renderToDOList()
 }
@@ -20,5 +28,6 @@ function renderToDOList() {
 
 function deleteTask(index) {
     toDoList.splice(index, 1);
+    localStorage.setItem('toDoList', JSON.stringify(toDoList));
     renderToDOList();
 }
