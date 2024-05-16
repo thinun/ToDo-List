@@ -20,7 +20,7 @@
         <h2>Author</h2>
         <p>Created by Thinun Tharushika</p>
         <h2>Project Screenshot</h2>
-        <img src="project_image.jpg" alt="Project Screenshot" style="max-width: 100%; height: auto;">
+        <img src="https://github.com/thinun/ToDo-List/blob/master/to%20do%20list.png" alt="Project Screenshot" style="max-width: 100%; height: auto;">
     </div>
 </body>
 </html>
